@@ -1,1 +1,2 @@
-# Jntuk-note6
+# Jntuk-Instant-Notes
+Jntuk notes sharing app
