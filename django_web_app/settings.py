@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'django_web_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
@@ -125,9 +125,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT= STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT= STATIC_ROOT = str(BASE_DIR / 'static')
 
-MEDIA_ROOT = STATIC_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = STATIC_ROOT = str(BASE_DIR / 'media')
 MEDIA_URL = BASE_DIR / 'media'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
